@@ -130,7 +130,7 @@ def load_lines_from_file(filename):
 
 async def wait_for_sms_code(number):
     utc_time = (datetime.now(timezone.utc) - timedelta(minutes=1)).strftime("%H:%M")
-    url = "http://161.35.92.51/api/showmsgs.php?id=096216e2f8024bb7529b8153d967881f&starttime=" + utc_time
+    url = "url" + utc_time
     await human_delay(12, 15)
     try:
         response = requests.get(url).json()
